@@ -1,0 +1,13 @@
+job('dsl_example_job') {
+	description('This is super duper job')
+
+  parameters {
+  	stringParam('Planet', defaultValue='world', description= 'This is the world')
+	booleanParam('FLAG', true)
+	choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
+  }
+
+  scm {
+	git('https://github.com/fmo/jenkins.git', 'master')
+  }
+}
