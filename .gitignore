@@ -2,3 +2,4 @@ jenkins_home
 script.sh
 remote-key
 remote-key.pub
+db_data
